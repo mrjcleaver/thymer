@@ -83,7 +83,7 @@ class Thymer
       @variables[:discount_cost] = @variables[:discount_unit_rate] * @variables[:discount_seconds]
       
       @variables[:regular_priced_seconds] = @variables[:total_seconds] - @variables[:discount_seconds]
-      puts "discout cost: #{@variables[:discount_cost]/3600}"
+      puts "discount cost: #{@variables[:discount_cost]/3600}"
 
       @variables[:total_cost] = @variables[:discount_cost] + (@variables[:regular_priced_seconds] * @variables[:unit_rate])
       puts "total cost: #{ @variables[:total_cost]/3600}"
